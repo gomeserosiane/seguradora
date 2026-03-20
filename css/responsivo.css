@@ -25,6 +25,10 @@
     padding: 14px 14px 0;
   }
 
+  .header-image {
+    height: 130px;
+  }
+
   .hero,
   .main-content,
   .footer {
@@ -35,6 +39,11 @@
   .hero {
     padding-top: 24px;
     padding-bottom: 18px;
+  }
+
+  .hero-badge {
+    font-size: 1.1rem;
+    text-align: center;
   }
 
   .main-content {
