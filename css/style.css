@@ -161,7 +161,7 @@ body {
 .mini-section-title {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #03ABBF;
+  color: bla;
   margin-bottom: 18px;
 }
 
@@ -184,13 +184,9 @@ body {
   font-size: 0.95rem;
   line-height: 1.35;
   font-weight: 700;
-  color: #03ABBF;
+  color: black;
 
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.45)
-  );
+  background: #03acbf38;
 
   border: 2px solid rgba(3, 171, 191, 0.18);
   border-radius: 16px;
