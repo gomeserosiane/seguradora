@@ -78,12 +78,10 @@
   }
 
   .card h3 {
-    order: 1;
     margin-bottom: 10px;
   }
 
   .card p {
-    order: 2;
     font-size: 0.94rem;
     line-height: 1.65;
   }
