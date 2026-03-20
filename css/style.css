@@ -158,6 +158,70 @@ body {
   color: #03ABBF;
 }
 
+.mini-section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #03ABBF;
+  margin-bottom: 18px;
+}
+
+.specialties-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.mini-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  min-height: 72px;
+  padding: 14px 12px;
+
+  font-size: 0.95rem;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #03ABBF;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.45)
+  );
+
+  border: 2px solid rgba(3, 171, 191, 0.18);
+  border-radius: 16px;
+
+  box-shadow:
+    0 6px 14px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.mini-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(3, 171, 191, 0.4);
+  box-shadow:
+    0 10px 18px rgba(0, 0, 0, 0.12),
+    0 0 16px rgba(17, 184, 201, 0.08);
+}
+
+.card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h3 {
+  margin-bottom: 12px;
+}
+
 .cards-grid {
   display: flex;
   flex-direction: column;
@@ -166,8 +230,9 @@ body {
 
 .card {
   display: flex;
-  align-items: center;
-  gap: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
 
   padding: 24px;
   border-radius: var(--radius-lg);
@@ -196,12 +261,14 @@ body {
 }
 
 .card h3 {
+  width: 100%;
   font-size: 1.18rem;
   margin-bottom: 14px;
   color: #03ABBF;
 }
 
 .card p {
+  width: 100%;
   font-size: 0.98rem;
   line-height: 1.75;
   color: black;
@@ -210,11 +277,13 @@ body {
 .footer {
   padding-top: 30px;
   padding-bottom: 34px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 24px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
   align-items: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-block {
@@ -240,6 +309,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .contact-button {
@@ -248,7 +318,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  min-width: 250px;
+  min-width: 280px;
   padding: 18px 28px;
   border-radius: 999px;
   text-decoration: none;
