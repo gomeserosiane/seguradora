@@ -173,7 +173,7 @@ body {
 
 .mini-card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   text-align: center;
 
@@ -246,8 +246,6 @@ body {
     0 8px 15px rgba(0, 0, 0, 0.2);
 
   transition: all var(--transition);
-
-  cursor: pointer;
 }
 
 .card:hover {
