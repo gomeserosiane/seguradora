@@ -376,6 +376,48 @@ body {
   }
 }
 
+.scroll-top-float {
+  position: fixed;
+  bottom: 92px;
+  right: 24px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 0 12px rgba(15, 23, 42, 0.22),
+    0 10px 24px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  z-index: 998;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    opacity 0.3s ease,
+    filter 0.3s ease;
+}
+
+.scroll-top-float:hover {
+  transform: translateY(-3px) scale(1.06);
+  filter: brightness(1.05);
+  box-shadow:
+    0 0 16px rgba(15, 23, 42, 0.28),
+    0 14px 28px rgba(0, 0, 0, 0.28);
+}
+
+.scroll-top-float:active {
+  transform: scale(0.96);
+}
+
+.scroll-top-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .whatsapp-float {
   position: fixed;
   bottom: 24px;
@@ -684,4 +726,3 @@ body {
   color: #3f5560;
   line-height: 1.75;
 }
-
