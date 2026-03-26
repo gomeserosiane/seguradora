@@ -106,3 +106,23 @@
     padding: 16px 20px;
   }
 }
+
+@media (max-width: 760px) {
+  .screen-frame {
+    gap: 14px;
+  }
+
+  .panel-toolbar {
+    padding: 0;
+  }
+
+  .feature-card {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .feature-button,
+  .back-button {
+    width: 100%;
+  }
+}
