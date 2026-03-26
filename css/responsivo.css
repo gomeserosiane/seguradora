@@ -125,4 +125,14 @@
   .back-button {
     width: 100%;
   }
+
+  .feature-card2 {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .feature-button2,
+  .back-button2 {
+    width: 100%;
+  }
 }
