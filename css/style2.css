@@ -173,10 +173,8 @@
     color: black;
 }
 
-.footer {
-    padding-top: 30px;
+.footer-oral {
     padding-bottom: 34px;
-    margin-top: 20px;
 
     display: flex;
     justify-content: center;

@@ -270,10 +270,15 @@ body {
   color: black;
 }
 
+.card a.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0 auto;
+}
+
 .footer {
-  padding-top: 30px;
   padding-bottom: 34px;
-  margin-top: 20px;
 
   display: flex;
   justify-content: center;
@@ -311,7 +316,7 @@ body {
 .footer-actions {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 8px;
   width: 100%;
   flex-wrap: wrap;
@@ -374,8 +379,8 @@ body {
 
 .contact-button {
   position: relative;
-  display: inline-flex;
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
   justify-content: center;
   gap: 12px;
   min-width: 280px;
