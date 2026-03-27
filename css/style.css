@@ -277,7 +277,7 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -306,6 +306,70 @@ body {
   align-items: flex-start;
   justify-content: center;
   width: 100%;
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-back-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 280px;
+  min-height: 58px;
+  padding: 18px 28px;
+  border: 1px solid rgba(3, 171, 191, 0.22);
+  border-radius: 999px;
+  background: #eeeeee;
+  color: #03abbf;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  box-shadow:
+    0 10px 24px rgba(3, 171, 191, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    filter 0.3s ease;
+}
+
+.footer-back-button:hover {
+  transform: translateY(-3px);
+  border-color: rgba(3, 171, 191, 0.38);
+  box-shadow:
+    0 16px 32px rgba(3, 171, 191, 0.14),
+    0 0 0 6px rgba(3, 171, 191, 0.06);
+  filter: brightness(1.01);
+}
+
+.footer-back-button:active {
+  transform: scale(0.985);
+}
+
+.footer-back-button-oral {
+  color: #0054ff;
+  border: 1px solid rgba(0, 84, 255, 0.22);
+  box-shadow:
+    0 10px 24px rgba(0, 84, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.footer-back-button-oral:hover {
+  border-color: rgba(0, 84, 255, 0.38);
+  box-shadow:
+    0 16px 32px rgba(0, 84, 255, 0.14),
+    0 0 0 6px rgba(0, 84, 255, 0.06);
 }
 
 .contact-button {
@@ -377,7 +441,7 @@ body {
 .scroll-top-float {
   position: fixed;
   bottom: 92px;
-  right: 24px;
+  right: 50px;
   width: 34px;
   height: 34px;
   display: flex;

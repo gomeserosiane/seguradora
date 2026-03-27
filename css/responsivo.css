@@ -112,6 +112,19 @@
     width: 50px;
     height: 50px;
   }
+
+  .footer-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-back-button,
+  .footer-back-button-oral,
+  .contact-button,
+  .contact-button-oral {
+    width: 100%;
+    min-width: unset;
+  }
 }
 
 @media (max-width: 760px) {
